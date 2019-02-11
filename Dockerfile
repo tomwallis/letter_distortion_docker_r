@@ -53,6 +53,5 @@ RUN install2.r --error \
     tidybayes
 
 # install dev version of brms for bug fix:
-RUN R --no-restore \
-    --no-save -e \
-    'devtools::install_github("paul-buerkner/brms", ref = "fb32bf5")'
+RUN install2.r --error \
+    brms
